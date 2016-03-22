@@ -1,0 +1,59 @@
+/*!
+Theme Name: Paralx
+Theme URI: http://pixlstore.com/paralx
+Author: Pixlstore
+Author URI: http://pixlstore.com/
+Description: A responsive mobile app landing WordPress theme
+License:
+License URI:
+Version: 1.0
+Tags: responsive-layout, post-formats, theme-options
+
+	TABLE OF CONTENT
+	
+	1. SETTINGS
+	2. RESET
+	3. MIXINS
+	4. GLOBAL
+	5. TYPOGRAPHHY
+	6. FORM
+	7. MENU
+	8. HEADER
+	9. PAGE HEADER
+	10. FOOTER
+	11. LAYOUT
+	12. CONTENT
+	13. PAGE BUILDER BLOCKS
+	14. BLOG
+	15. MEDIA
+	16. NAVIGATION
+	17. COMMENTS
+	18. MEDIA QUERY	
+	
+*/
+
+// configure the style from settings
+@import 'settings';
+
+// reset styles should stay at the top
+@import 'reset';
+
+// move mixins to their own partial
+@import 'mixins';
+
+// feel free to add any new files you want; if you add them this list they'll be included
+@import 'global';
+@import 'typography';
+@import 'forms';
+@import 'menu-push';
+@import 'header';
+@import 'page-header';
+@import 'footer';
+@import 'layout';
+@import 'content';
+@import 'blocks';
+@import 'blog';
+@import 'media';
+@import 'navigation';
+@import 'comments';
+@import 'media-query';

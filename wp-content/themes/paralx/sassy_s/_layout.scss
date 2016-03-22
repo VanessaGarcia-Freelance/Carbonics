@@ -1,0 +1,44 @@
+/* 11. LAYOUTS
+-------------------------------------------------------------- */
+
+.site-content.pages {
+	height: auto;
+	clear: both;
+	overflow: hidden;
+}
+
+.site-content.error {
+	height: auto;
+	clear: both;
+	overflow: hidden;
+	
+	.content-area {
+		position: relative;
+		width: 1140px;
+		margin: 0 auto;
+		clear: both;
+		height: auto;
+		padding: 50px 0;
+		
+		.page-content {
+			p {
+				font-weight: 300;
+				color: #555;
+				margin: 0 0 15px 0;
+			}
+		}
+	}
+}
+
+.content-none {
+	h1 {
+		color: #3CD3AD;
+		font-weight: 300;
+		margin-bottom: 5px;
+	}
+	
+	p {
+		color: #999;
+		font-weight: 300;
+	}
+}

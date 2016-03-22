@@ -1,0 +1,1 @@
+[04-Jan-2016 02:42:00 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/carboni1/public_html/wp-content/themes/twentytwelve/404.php on line 10

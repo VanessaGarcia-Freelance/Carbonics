@@ -1,0 +1,107 @@
+/* 8. HEADER
+-------------------------------------------------------------- */
+
+.header {
+	width: 100%;
+	position: fixed;
+	z-index: 9999999;
+	padding: 25px 35px;
+
+	@extend .transitions;
+	
+	.branding {
+		float: left;
+		.logo {
+			@extend .transitions;
+			a {
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+		img {
+			width: 125px;
+			margin-top: 0;
+			@extend .transitions;
+		}
+	}
+	
+	.menu {
+		.language {
+			float: right;
+			margin: 11px 25px 0 0;
+		}
+		.dl-trigger {
+			float: right;
+			cursor: pointer;
+			margin-top: 10px;
+			i {
+				color: #fff;
+				font-size: 1.8em;
+			}
+		}
+	}
+}
+
+.header.active {
+
+	background: #252422;
+	padding: 10px 35px 8px 35px;
+	@extend .transitions;
+	
+	.branding {
+		
+		.logo {
+			font-size: 1.4em;
+			margin-top: -2px;
+			a {
+				color: #fff;
+				@extend .transitions;
+			}	
+		}
+		img {
+			width: 75px;
+			margin-top: 5px;
+		}
+	}
+	
+	.menu {
+		.language {
+			float: right;
+			margin: 6px 25px 0 0;
+		}
+		.dl-trigger {
+			font-size: 0.8em;
+			margin:9px 0 0 0;
+			-webkit-transform: rotate(-360deg);
+			@extend .transitions;
+			
+			i {
+				color: #fff;
+				@extend .transitions;
+			}
+		}
+	}
+	
+	&:hover {
+		background: #3CD3AD;
+		box-shadow: none;
+		
+		.branding {
+			.logo {
+				a {
+					color: #fff;
+				}
+			}
+		}
+		
+		.menu {
+			.dl-trigger {
+				-webkit-transform: rotate(0);
+				i {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

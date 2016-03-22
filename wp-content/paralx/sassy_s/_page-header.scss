@@ -1,0 +1,59 @@
+/* 9. PAGE HEADER
+-------------------------------------------------------------- */
+
+.page-header {
+	position: relative;
+	background: url('img/background-splash.jpg')no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	clear: both;
+	padding-bottom: 50px;
+	
+	.container {
+		z-index: 3;
+		padding-top: 125px;
+		
+		.entry-title {
+			color: #fff;
+			font-size: 3em;
+			padding-bottom: 12px;
+			border-bottom: 3px solid rgba(255,255,255,.4);
+			margin-bottom: 25px;
+		}
+		
+		.breadcrumbs {
+			color: #fff;
+			font-size: 0.9em;
+			font-weight: 300;
+			
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+			
+			span{
+				margin-right: 10px;
+			}
+			
+			span.current {
+				margin-left: 10px;
+				padding-bottom: 5px;
+				border-bottom: 4px double rgba(255,255,255,.6);
+			}
+		}
+	}
+	
+	.tint {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 50px;
+		position: absolute;
+		top:0;
+		z-index: 2;
+		background: #3CD3AD;
+		opacity: 0.7;
+	}
+	
+}

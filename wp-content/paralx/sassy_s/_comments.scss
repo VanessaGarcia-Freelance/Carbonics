@@ -1,0 +1,279 @@
+/* 17. COMMENTS
+-------------------------------------------------------------- */
+
+.comments-area {
+
+	article {
+		margin-bottom: 15px!important;
+	}
+	
+	.comments-title {
+		
+		margin-bottom: 15px;
+		color: #3CD3AD;
+		font-weight: 300;
+		-ms-word-wrap: break-word;
+		word-wrap: break-word;
+		
+		span {
+			color: #222;
+			margin-left: 10px;
+		}
+		
+	}
+	
+	.comment-list {
+	
+		.children {list-style-type: none;}
+		
+		margin: 25px 0;
+		list-style-type: none;
+		
+		.comment {
+			
+			padding: 15px 15px 15px 15px;
+			
+			.comment-meta {
+				position: relative;
+				background: #3CD3AD;
+				padding: 6px 15px 4px 15px;
+				margin-bottom: 25px;
+				
+				.comment-metadata{
+					position: absolute;
+					right: 10px;
+					top: 15px;
+					
+					time {
+						color: #fff;
+						font-size: 0.8em;
+						font-weight: 300;
+						margin-right: 8px;
+					}
+					
+					.edit-link {margin-top: -2px;}
+				}
+				
+				.comment-author {
+					
+					img {
+						width: 30px;
+						margin-right: 8px;
+						margin-top: 5px;
+						border-radius: 50%;
+						background: #3CD3AD;
+						border: 3px solid #eee;
+					}
+					
+
+					.fn {
+						position: relative;
+						top: -8px;
+						font-weight: 400;
+						font-style: normal;
+						color: #fff;
+						a {
+							color: #fff;
+							font-weight: 400;
+							font-style: normal;
+						}
+					}
+					
+					.says {
+						position: relative;
+						top: -8px;
+						color: #fff;
+						font-weight: 300;
+						font-size: 0.8em;
+						margin-left: 2px;
+						font-style: italic;
+					}
+				}
+				
+				.comment-edit-link {
+					color: #fff;
+					font-size: 0.9em;
+					font-weight: 300;
+					margin-right: 4px;
+					opacity: 0.8;
+					border-left: 1px solid #fff;
+					padding-left: 8px;
+				}
+			}
+			
+			.reply {
+				margin: 0 0 15px 25px;
+				a {
+					background: #fff;
+					border: 2px solid #eee;
+					padding: 4px 8px;
+					border-radius: 4px;
+					margin-left: 0;
+					font-size: 0.7em;
+					color: #222;
+					@extend .transitions;
+					
+					&:hover {
+						color: #3CD3AD;
+					}
+				}
+			}
+		}
+		
+		.comment-content {
+			
+			p {
+				color: #555;
+				font-weight: 300;
+				font-size: 0.9em;
+				line-height: 1.6em;
+			}
+			
+			blockquote {
+				p {
+					color: #3CD3AD;
+					font-weight: 400;
+					font-size: 1em;
+					
+					cite {
+						color: #222;
+					}
+				
+				}
+			}
+			
+			table {
+				tbody {
+					th {
+						background: #3CD3AD;
+					}
+					tr {
+						td {
+							a {
+								font-weight: 400;
+								color: #3CD3AD;
+							}
+						}
+					}
+					tr.odd {
+						background: #fff;
+					}
+					tr.even {
+						background: #f7ffff;
+					}
+				}
+			}
+		}
+		
+		.even {
+			background: #fafafa;
+			border: 1px solid #eee;
+		}
+		
+		.odd {
+			background: #f7f7f7;
+			border: 1px solid #eee;
+		}
+		
+		.pingback {
+			padding: 12px 15px;
+			font-size: 0.9em;
+			border: none;
+			margin-bottom: 1px;
+		}	
+		
+		.pingback.even {
+			background: #3CD3AD;
+			color: #fff;
+			font-weight: 400;
+			a {
+				color: #fff;
+				font-weight: 300;
+				margin-left: 5px;
+			}
+		}
+		
+		.pingback.odd {
+			background: #33bf9c;
+			color: #fff;
+			font-weight: 400;
+			a {
+				color: #fff;
+				font-weight: 300;
+				margin-left: 5px;
+			}
+		}
+	}
+	
+	.no-comments {
+		color: #d43b3b;
+		font-size: 0.9em;
+		font-style: italic;
+	}
+	
+	.comment-respond {
+		
+		.comment-reply-title {
+			color: #222;
+			font-size: 1.6em;
+			font-weight: 300;
+			margin-top: 50px;
+			
+			small {
+				a {
+					margin-top: 10px;
+					font-size: 0.7em;
+					color: #d43b3b;
+					float: right;
+				}
+			}
+		}
+		
+		.comment-form {
+		
+			input, textarea {
+				display: block;
+				margin-top: 8px;
+			}
+			
+			.form-allowed-tags {
+				font-size: 0.8em;
+				color: #999;
+				
+				code {
+					font-size: 0.9em;
+					color: #3CD3AD;
+					display: block;
+					margin-top: 10px;
+					line-height: 1.8em;
+				}
+			}
+			
+			.logged-in-as {
+				margin-top: 5px;
+				padding-bottom: 12px;
+				border-bottom: 4px double #eee;
+				font-size: 0.9em;
+				color: #999;
+				font-weight: 300;
+				a {
+					color: #3CD3AD;
+				}
+			}
+		}
+		
+		.comment-notes {
+			margin-top: 5px;
+			padding-bottom: 12px;
+			border-bottom: 1px dashed #eee;
+		}
+	}
+	
+}
+
+.comment-content a {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.bypostauthor {}

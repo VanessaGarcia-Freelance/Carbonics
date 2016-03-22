@@ -1,0 +1,1 @@
+(function(e){"use strict";var t,n=date_data.day,r=date_data.month-1,i=date_data.year,s=new Date,o=new Date(i,r,n),u=o.getTime()/1e3-s.getTime()/1e3;t=e(".clock").FlipClock(u,{clockFace:"DailyCounter",countdown:!0,showSeconds:!0})})(jQuery);

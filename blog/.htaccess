@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^blog\.carbonicsinc\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.blog\.carbonicsinc\.com$
+RewriteRule ^/?$ "http\:\/\/carbonicsblog\.weebly\.com\/" [R=301,L]
+

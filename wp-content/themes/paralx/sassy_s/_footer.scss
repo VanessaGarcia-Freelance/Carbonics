@@ -1,0 +1,132 @@
+/* 10. FOOTER
+-------------------------------------------------------------- */
+
+.site-footer {
+	clear: both;
+	padding: 50px 0 30px 0;
+	background: #252422;
+	
+	.container {
+	
+		position: relative;
+		overflow: visible;
+
+		.col_left {
+		
+			.site-info {
+		
+				border-bottom: 4px double #444;
+				padding-bottom: 10px;
+				margin-bottom: 20px;
+				
+				.logo {
+					a {
+						color: #fff;
+						text-decoration: none;
+						font-weight: 300;
+						text-transform: uppercase;
+					}
+				}
+				
+				img {
+					width: 125px;
+					margin-bottom: 5px;
+				}
+				
+				h5 {
+					color: #aaa;
+					font-weight: 300;
+					font-style: italic;
+					margin-top: 5px;
+				}
+				
+			}
+			
+			.site-about {
+				
+				p {
+					font-size: 0.9em;
+					color: #aaa;
+					font-weight: 300;
+					line-height: 1.6em;
+					margin: 0;
+				}
+				
+			}
+		}
+		
+		.col_right {
+			
+			position: relative;
+			width: 100%;
+			
+			.site-copyright {
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				right: 45px;
+				
+				ul {
+					margin: 0 0 20px 0;
+					list-style-type: none;
+					text-align: right;
+					
+					li {
+						display: inline-block;
+						margin-left: 12px;
+						a {
+							color: #fff;
+							@extend .transitions;
+							
+							i {font-size: 0.9em;}
+							
+							&:hover {color: #3CD3AD;}
+						}
+					}
+				}
+				
+				p {
+					font-size: 0.8em;
+					color: #aaa;
+					font-weight: 300;
+					line-height: 1.6em;
+					margin: 0;
+					text-align: right;
+					
+					span {
+						display: block;
+						font-size: 0.85em;
+						margin-top: 4px;
+						color: #777;
+					}
+				}
+			}
+			
+		}
+		
+		.go-top {
+			position: absolute;
+			top: -75px;
+			right: 0;
+			z-index: 9999999;
+			i {
+				padding: 11px 15px;
+				color: #fff;
+				background: #252422;
+				border: 2px solid #3CD3AD;
+				border-radius: 50%;
+				font-size: 1.4em;
+				-webkit-transform: scale(1) rotate(-360deg);
+				cursor: pointer;
+				@extend .transitions;
+				
+				&:hover {
+					background: #3CD3AD;
+					-webkit-transform: scale(1.2) rotate(0);
+				}
+			}
+		}
+		
+	}
+	
+}
